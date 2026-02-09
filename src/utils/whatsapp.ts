@@ -20,7 +20,7 @@ export const generateWhatsAppMessage = (cart: Cart, customer: Customer): string 
   return encodeURIComponent(message);
 };
 
-export const sendToWhatsApp = (message: string, phoneNumber: string = "01274755272") => {
+export const sendToWhatsApp = (message: string, phoneNumber: string = "201274755272") => {
   const url = `https://wa.me/${phoneNumber}?text=${message}`;
   window.open(url, '_blank');
 };
